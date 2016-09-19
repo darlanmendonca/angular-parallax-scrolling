@@ -2,6 +2,8 @@
 
 An angular directive to [parallax-scrolling](https://github.com/darlanmendonca/parallax-scrolling)
 
+See the [demo](http://codepen.io/darlanmendonca/full/NRNvRZ/)
+
 ### Install
 
 With bower
