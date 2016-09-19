@@ -1,15 +1,13 @@
-# parallax scrolling
+# angular-parallax-scrolling
 
-A component to make parallax scrolling with css (perspective 3d) and js (z-index)
-
-See the [demo](http://codepen.io/darlanmendonca/full/NRNvRZ/)
+An angular directive to [parallax-scrolling](https://github.com/darlanmendonca/parallax-scrolling)
 
 ### Install
 
 With bower
 
 ```sh
-bower install --save parallax-scrolling
+bower install --save angular-parallax-scrolling
 ```
 
 Or just download the main files ```dist/parallax-scrolling.css, dist/parallax-scrolling.js``` in your project, and make a reference to their, like:
@@ -32,25 +30,11 @@ And then, in your html, you can use the tag:
 </div>
 ```
 
-Classes:
-
-- ```.parallax-scrolling``` define container to parallax sections
-- ```.layer-base``` foreground layer in perspective, with solid background-color
-- ```.layer-background``` background layer in perspective
-
-Class .home, and .about just be examples of custom classes that you need implement in your own style. You probaly will need define the background-image, background-position, etc. I.e:
-
-```sass
-// custom css
-.layer-background.home {
-  background-image: url('path/to/img');
-}
-
-.layer-background.about {
-  background-image: url('path/to/img');
-  background-position: center right;
-}
+```js
+angular.module('app', [
+  'parallax-scrolling'
+]);
 ```
 
-By default, .layer-background have ```background-size: auto 100%```, by convenience.
+For more details check docs [parallax-scrolling docs](https://github.com/darlanmendonca/parallax-scrolling).
 

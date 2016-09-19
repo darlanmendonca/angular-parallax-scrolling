@@ -1,7 +1,7 @@
 {
-  "name": "parallax-scrolling",
+  "name": "angular-parallax-scrolling",
   "version": "0.0.1",
-  "description": "A component to make parallax scrolling with css (perspective 3d) and js (z-index)",
+  "description": "An angular directive to parallax-scrolling",
   "main": [
     "dist/parallax-scrolling.css",
     "dist/parallax-scrolling.js"
