@@ -1,0 +1,53 @@
+html(ng-app='app')
+  meta(name='viewport' content='width=device-width, user-scalable=no')
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css')
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans')
+  link(rel='stylesheet' href='parallax-scrolling.css')
+  style.
+    body {
+      font-family: 'Open Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .layer-background {
+      background-color: #181d23;
+    }
+
+    .layer-background.home {background-image: url('../imgs/home.jpg')}
+    .layer-background.testimonials {background-image: url('../imgs/testimonials.jpg')}
+    .layer-background.cooking-classes {background-image: url('../imgs/cooking-classes.jpg')}
+    .layer-background.the-books {
+      background-image: url('../imgs/the-books.jpg');
+      background-position: right center;
+    }
+    .layer-background.contact {background-image: url('../imgs/contact.jpg')}
+
+    .layer-base.footer {
+      min-height: 50vh;
+      box-shadow: 0 -1px 3px rgba(0, 0, 0, .3);
+    }
+
+body
+  .parallax-scrolling
+    section.layer-background.home
+    section.layer-base
+    
+    section.layer-background.testimonials
+    section.layer-base
+
+    section.layer-background.cooking-classes
+    section.layer-base
+
+    section.layer-background.the-books
+    section.layer-base
+
+    section.layer-background.contact
+    footer.layer-base.footer
+
+  script(src='scripts/vendor.js')
+  script(src='parallax-scrolling.js')
+  script.
+    angular.module('app', [
+      'parallax-scrolling',
+    ]);
+

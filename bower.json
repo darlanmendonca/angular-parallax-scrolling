@@ -1,0 +1,20 @@
+{
+  "name": "parallax-scrolling",
+  "version": "0.0.1",
+  "description": "A component to make parallax scrolling with css (perspective 3d) and js (z-index)",
+  "main": [
+    "dist/parallax-scrolling.css",
+    "dist/parallax-scrolling.js"
+  ],
+  "authors": [
+    "Darlan Mendonça <darlanmendonca@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "parallax-scrolling": "^0.0.4"
+  },
+  "devDependencies": {
+    "angular": "^1.5.8"
+  }
+}
